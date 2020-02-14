@@ -22,16 +22,21 @@ Bookmarks Server App for the Bookmarks Client App
 
 ```
 GET /bookmarks
+
 Responds with an array of bookmarks
+
 Headers:
     Authorization (Bearer Token, required)
 ```
 
 ```
 POST /bookmarks
+
 Adds a new bookmark and responds with the id
+
 Headers:
     Authorization (Bearer Token, required)
+
 Body: (JSON object, required)
     { 
       "title": (string, required), 
@@ -45,14 +50,18 @@ Body: (JSON object, required)
 
 ```
 GET /bookmarks/:id
+
 Responds with a bookmark with uuid:id
+
 Headers:
     Authorization (Bearer Token, required)
 ```
 
 ```
 DELETE /bookmarks/:id
+
 Deletes bookmark
+
 Headers:
     Authorization (Bearer Token, required)
 ```
